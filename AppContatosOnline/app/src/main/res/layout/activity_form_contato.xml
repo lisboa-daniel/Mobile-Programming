@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    tools:context="com.daniel.appcontatoonline.FormContatoActivity">
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:src="@drawable/person_200"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        ></ImageView>
+    <EditText
+        android:id="@+id/txtNome"
+        android:hint="Nome:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:id="@+id/txtTelefone"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:id="@+id/txtEmail"
+        android:hint="Email:"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:id="@+id/txtEndereco"
+        android:hint="Endereço:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" ></EditText>
+    <Button
+        android:id="@+id/btSalvar"
+        android:text="Salvar"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+
+</LinearLayout>
